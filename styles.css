@@ -11,9 +11,81 @@
 
  /* Selector de etiqueta */
 
+ h1{
+   background-color: red;
+   color: white;
+   padding: 10px;
+ }
+
+ a{
+  font-size: 18px;
+  color: green;
+  text-decoration: none;
+ }
+
+ footer a{  /* Selector compuestos */
+    color: purple;
+ }
+
   /* Selector de ID */
+
+  #descripcion{
+      border: 5px solid black;
+      padding: 15px;
+  }
+
+  #titulo{
+    background-color: blue;
+    border: 2px dashed white;
+  }
 
    /* Selector de Clase */
 
+   .parrafo{
+    font-style: italic;
+    /*text-decoration: underline; */
+    font-weight: bold;
+    padding: 10px;
+  
+    
+   }
+
+   .parrafo1, parrafo3{
+    background-color: green;
+    color: white;
+  
+   }
+
+   .parrafo3{
+    background-color: orange;
+    color: black;
+   }
+
     /* Selector de Atributo */
 
+    #usuario form{
+      border: 5px solid blue;
+      margin-top: 15px;  /* Margen por arriba */
+      margin-bottom: 15px;  /* Margen por abajo */
+      padding: 20px;
+    }
+
+    #usuario form *{
+      display: block; /* Permite que los elementos se comporten como texto o como elementos en linea, que todo valla una cosa a lado de la otra */
+    }
+
+    input[type="text"]{ /* Sirve para seleccionar los atributos a los elementos */
+      margin-bottom: 15px;
+      padding: 5px;
+      width: 300px;
+    } 
+
+    input[type="submit"]{
+      background-color: green;
+      color: white;
+      padding: 15px;
+      font-size: 17px;
+      text-transform:uppercase; /* ´Permite cambiar de minuscula a mayuscula y vicerversa */
+      border: 1px solid black;
+      cursor: pointer;
+    }
